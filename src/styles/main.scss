@@ -1,0 +1,89 @@
+.d-flex {
+  display: flex;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-end{
+  justify-content: flex-end;
+}
+.align-items-center{
+  align-items: center;
+}
+.flex-1{
+  flex: 1
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.icon-btn {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+
+}
+
+.text-center{
+  text-align: center;
+}
+
+button:focus{
+  background: none;
+}
+#film-page{
+  width: 800px;
+  margin-top: 20px;
+  .header{
+    margin-bottom: 40px;
+  }
+  .back-btn{
+    @extend .icon-btn;
+    font-size: 20px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    transition: .2s;
+    &:hover{
+      background: #00000010;
+    }
+  }
+}
+#main {
+  width: 800px;
+
+  .search-form {
+    position: relative;
+    .close-icon{
+      position: absolute;
+      right: 0;
+      top: 10px;
+    }
+  }
+
+  #films-block{
+    margin-top: 40px;
+  }
+  .badge{
+    border-radius: 15px;
+    padding: 3px 10px;
+    font-size: 12px;
+    background: #546e7a ;
+    color: #ffffff;
+    height: auto;
+    cursor: pointer;
+    transition: .3s;
+  }
+  #tags{
+    margin-top: 30px;
+    .badge{
+      margin: 5px;
+    }
+  }
+
+}
